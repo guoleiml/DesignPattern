@@ -9,8 +9,8 @@ import org.junit.Test;
 public class TestMain {
 	@Test
 	public void testAnimal() {
-		Animal animal = new Cat();
-		animal.test();
+		Cat animal = new Cat();
+//		animal.test();
 		System.out.println(animal.num);
 	}
 	
@@ -21,4 +21,14 @@ public class TestMain {
 			System.out.println(values[i]);
 		}
 	}
+	
+	@Test
+	public void testStaticOrder() {
+//		ConstantsNode node = new ConstantsNode();
+		System.out.println(ConstantsNode.value);
+	}
+	
+	
+	
+	
 }
